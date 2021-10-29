@@ -12,14 +12,26 @@ export const DarkModeToggle = () => {
 
   return (
     <>
-      <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-        <div
-          className="p-2 text-black dark:text-white 
-                      hover:text-white dark:hover:text-black
-                      border-black dark:border-white border-2 rounded-3xl hover:rounded-lg shadow-xl
-                      hover:bg-black dark:hover:bg-white
-                      transition ease-linear cursor-pointer"
-        >
+      <style>
+        {`
+        .sick-dark-mode-toggle-button {
+          border-radius: 4rem;
+        }
+        .sick-dark-mode-toggle-button:hover {
+          border-radius: 0.5rem;
+        }
+      `}
+      </style>
+      <button
+        className="sick-dark-mode-toggle-button
+                  p-2 text-black dark:text-white 
+                  hover:text-white dark:hover:text-black
+                  border-black dark:border-white border-2 
+                  shadow-xl hover:bg-black dark:hover:bg-white
+                  transition-all duration-300 ease-linear"
+        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      >
+        <div>
           {theme === 'light' ? (
             <svg
               className="w-8 h-8"

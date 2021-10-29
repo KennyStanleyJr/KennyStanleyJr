@@ -12,18 +12,8 @@ export const DarkModeToggle = () => {
 
   return (
     <>
-      <style>
-        {`
-        .sick-dark-mode-toggle-button {
-          border-radius: 4rem;
-        }
-        .sick-dark-mode-toggle-button:hover {
-          border-radius: 0.5rem;
-        }
-      `}
-      </style>
       <button
-        className="sick-dark-mode-toggle-button
+        className="animated-radius
                   p-2 text-black dark:text-white 
                   hover:text-white dark:hover:text-black
                   border-black dark:border-white border-2 

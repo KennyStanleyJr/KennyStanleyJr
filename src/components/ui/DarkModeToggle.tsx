@@ -14,9 +14,11 @@ export const DarkModeToggle = () => {
     <>
       <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
         <div
-          className="p-2 bg-black dark:bg-white text-white dark:text-black 
-                      border-black border-2 rounded-3xl hover:rounded-lg shadow-xl
-                      transition-all ease-linear cursor-pointer"
+          className="p-2 text-black dark:text-white 
+                      hover:text-white dark:hover:text-black
+                      border-black dark:border-white border-2 rounded-3xl hover:rounded-lg shadow-xl
+                      hover:bg-black dark:hover:bg-white
+                      transition ease-linear cursor-pointer"
         >
           {theme === 'light' ? (
             <svg

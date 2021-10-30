@@ -3,7 +3,8 @@ import Header from '@/components/layout/Header'
 import Logo from '@/components/ui/Logo'
 import Navigation from '@/components/domain/Navigation'
 import DarkModeToggle from '@/components/ui/DarkModeToggle'
-import Content from '@/components/ui/Content'
+import Section from '@/components/layout/Section'
+import Intro from '@/components/ui/Intro'
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
         <Navigation />
         <DarkModeToggle />
       </Header>
-      {/* <Content /> */}
+      <Section>
+        <Intro />
+      </Section>
     </Main>
   )
 }

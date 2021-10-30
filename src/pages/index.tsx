@@ -6,7 +6,8 @@ import DarkModeToggle from '@/components/ui/DarkModeToggle'
 import Intro from '@/components/ui/Intro'
 import HeroModel from '@/components/ui/HeroModel'
 import { Canvas } from '@react-three/fiber'
-import { Container } from '@/components/layout/Container'
+import Container from '@/components/layout/Container'
+import HeroSection from '@/components/layout/HeroSection'
 
 export default function Home() {
   return (
@@ -20,15 +21,12 @@ export default function Home() {
           <DarkModeToggle />
         </Header>
         <Container>
-          <div className="h-full flex md:flex-row flex-col-reverse">
+          <HeroSection>
             <Intro />
-
-            <div className="flex-1">
-              <Canvas>
-                <HeroModel />
-              </Canvas>
-            </div>
-          </div>
+            <Canvas>
+              <HeroModel />
+            </Canvas>
+          </HeroSection>
         </Container>
       </Main>
     </>

@@ -15,11 +15,14 @@
   "dependencies": {
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.4",
+    "@react-three/drei": "^7.19.2",
+    "@react-three/fiber": "^7.0.17",
     "cross-env": "^7.0.3",
     "next": "^12.0.1",
     "next-themes": "^0.0.15",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "three": "^0.134.0"
   },
   "devDependencies": {
     "@testing-library/dom": "^8.9.0",
@@ -29,6 +32,7 @@
     "@types/jest": "^27.0.2",
     "@types/node": "^16.10.9",
     "@types/react": "17.0.30",
+    "@types/three": "^0.133.1",
     "autoprefixer": "^10.3.7",
     "babel-jest": "^27.2.5",
     "eslint": "^8.0.1",

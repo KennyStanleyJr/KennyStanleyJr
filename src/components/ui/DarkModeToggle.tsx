@@ -18,7 +18,7 @@ export const DarkModeToggle = () => {
                   hover:text-white dark:hover:text-black
                   border-black dark:border-white border-2 
                   shadow-xl hover:bg-black dark:hover:bg-white
-                  transition-all duration-300 ease-linear"
+                  transition-all duration-150 ease-linear"
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       >
         <div>

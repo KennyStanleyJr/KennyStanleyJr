@@ -23,9 +23,11 @@ export default function Home() {
         <Container>
           <HeroSection>
             <Intro />
-            <Canvas>
-              <HeroModel />
-            </Canvas>
+            <div className="flex-1">
+              <Canvas>
+                <HeroModel />
+              </Canvas>
+            </div>
           </HeroSection>
         </Container>
       </Main>

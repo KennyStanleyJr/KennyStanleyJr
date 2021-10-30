@@ -13,10 +13,12 @@ export default function Home() {
       <Main>
         <Header>
           <Logo />
-          <Navigation />
+          <div className="hidden md:block">
+            <Navigation />
+          </div>
           <DarkModeToggle />
         </Header>
-        <div className="h-full flex">
+        <div className="h-full flex md:flex-row flex-col-reverse">
           <Intro />
 
           <div className="flex-1">

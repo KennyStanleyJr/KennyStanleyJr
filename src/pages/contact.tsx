@@ -1,7 +1,6 @@
 import Navigation from '@/components/domain/Navigation'
 import Container from '@/components/layout/Container'
 import Header from '@/components/layout/Header'
-import HeroSection from '@/components/layout/HeroSection'
 import Main from '@/components/layout/Main'
 import ContactContent from '@/components/ui/ContactContent'
 import DarkModeToggle from '@/components/ui/DarkModeToggle'
@@ -19,9 +18,7 @@ export default function Contact() {
           <DarkModeToggle />
         </Header>
         <Container>
-          <HeroSection>
-            <ContactContent />
-          </HeroSection>
+          <ContactContent />
         </Container>
       </Main>
     </div>

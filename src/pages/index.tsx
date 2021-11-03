@@ -5,7 +5,6 @@ import Navigation from '@/components/domain/Navigation'
 import DarkModeToggle from '@/components/ui/DarkModeToggle'
 import Intro from '@/components/ui/Intro'
 import Container from '@/components/layout/Container'
-import HeroSection from '@/components/layout/HeroSection'
 
 export default function Home() {
   return (
@@ -20,9 +19,7 @@ export default function Home() {
             <DarkModeToggle />
           </Header>
           <Container>
-            <HeroSection>
-              <Intro />
-            </HeroSection>
+            <Intro />
           </Container>
         </Main>
       </div>

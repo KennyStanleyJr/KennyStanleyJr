@@ -12,9 +12,7 @@ export default function About() {
       <Main>
         <Header>
           <Logo />
-          <div className="hidden md:block">
-            <Navigation />
-          </div>
+          <Navigation />
           <DarkModeToggle />
         </Header>
         <Container>

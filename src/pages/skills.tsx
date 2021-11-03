@@ -12,9 +12,7 @@ export default function Skills() {
       <Main>
         <Header>
           <Logo />
-          <div className="hidden md:block">
-            <Navigation />
-          </div>
+          <Navigation />
           <DarkModeToggle />
         </Header>
         <Container>

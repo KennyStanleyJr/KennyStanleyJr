@@ -13,9 +13,7 @@ export default function Home() {
         <Main>
           <Header>
             <Logo />
-            <div className="hidden md:block">
-              <Navigation />
-            </div>
+            <Navigation />
             <DarkModeToggle />
           </Header>
           <Container>

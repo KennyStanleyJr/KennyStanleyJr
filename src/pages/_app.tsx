@@ -19,7 +19,7 @@ const RotateStars = ({ starsRef }: any) => {
 function MyApp({ Component, pageProps }: AppProps) {
   const starsRef = useRef()
   return (
-    <ThemeProvider attribute="class" defaultTheme="system">
+    <ThemeProvider attribute="class" defaultTheme="dark">
       <div className="h-screen">
         <Canvas>
           <Stars

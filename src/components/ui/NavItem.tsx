@@ -11,7 +11,9 @@ export const NavItem = ({ pageName }: { pageName: string }) => {
       }`}
     >
       <Link href={`/${pageName}`} passHref>
-        <p className="px-4 py-2 cursor-pointer">{pageName}</p>
+        <p className="px-3 py-2 sm:px-4 sm:py-2 cursor-pointer text-xs sm:text-sm md:text-base">
+          {pageName}
+        </p>
       </Link>
     </li>
   )

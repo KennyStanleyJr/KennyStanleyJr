@@ -11,7 +11,7 @@ export const Navigation = () => {
           ))}
         </ul>
       </div>
-      <div className="block md:hidden fixed bottom-0 left-0 right-0 py-4">
+      <div className="block md:hidden fixed bottom-0 left-0 right-0 py-4 z-50 bg-light-transparent dark:bg-dark-transparent">
         <ul className="flex justify-evenly">
           {NavItems.map((pageName) => (
             <NavItem key={pageName} pageName={pageName} />

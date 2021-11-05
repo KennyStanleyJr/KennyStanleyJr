@@ -10,10 +10,8 @@ export const AboutContent = () => {
         <div className="text-base md:text-xl font-light">
           <p>Hello, my name is Kenny Stanley.</p>
           <p>I am passionate about solving problems with technology.</p>
-          <p>
-            Graduated from Tennessee Technological University with a Bachelors
-            in Electrical Engineering.
-          </p>
+          <p>I&apos;m really cool, trust me.</p>
+          <p>No, like really, I promise.</p>
         </div>
 
         <div className="w-52 h-52 md:w-72 md:h-72 relative mx-auto">

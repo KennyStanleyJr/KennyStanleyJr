@@ -1,4 +1,4 @@
-import NavItem from '../ui/NavItem'
+import NavItem from '@/components/NavItem'
 
 export const Navigation = () => {
   const NavItems = ['about', 'skills', 'projects', 'contact']

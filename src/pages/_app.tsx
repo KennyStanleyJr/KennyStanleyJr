@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const starsRef = useRef()
   return (
     <ThemeProvider attribute="class" defaultTheme="dark">
-      <div className="h-full relative">
+      <div className="h-screen-with-spacer md:h-screen">
         <Canvas>
           <Stars
             ref={starsRef}
@@ -33,7 +33,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           />
           <RotateStars starsRef={starsRef} />
         </Canvas>
-        {/* <div className="h-32 bg-transparent md:hidden"></div> */}
       </div>
       <Component {...pageProps} />
     </ThemeProvider>

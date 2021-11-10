@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins'],
       },
+      height: (theme) => ({
+        'screen-with-spacer': 'calc(100vh + 8rem)',
+      }),
     },
   },
   variants: {

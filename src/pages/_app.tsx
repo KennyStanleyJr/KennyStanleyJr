@@ -7,13 +7,19 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { Stars } from '@react-three/drei'
 import { MutableRefObject, useRef } from 'react'
 
-import { Poppins } from "@next/font/google"
+import { Poppins, Permanent_Marker } from "@next/font/google"
 import Head from "next/head";
 
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-poppins',
+})
+
+const permanentMarker = Permanent_Marker({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-permanent-marker',
 })
 
 const MyApp: AppType = ({ Component, pageProps }) => {
@@ -27,7 +33,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       <ThemeProvider attribute="class" defaultTheme="dark">
         <ThemedCanvas />
 
-        <div className={`${poppins.variable} font-poppins`}>
+        <div className={`${poppins.variable} ${permanentMarker.variable} font-poppins`}>
           <Component {...pageProps} />
         </div>
       </ThemeProvider>

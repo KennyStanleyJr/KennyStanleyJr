@@ -8,6 +8,12 @@ import { Sparkles } from '@react-three/drei'
 
 import { Poppins, Permanent_Marker } from "@next/font/google"
 import Head from "next/head";
+import { Main } from "~/components/layout/Main";
+import { Header } from "~/components/layout/Header";
+import { Logo } from "~/components/Logo";
+import { Navigation } from "~/components/Navigation";
+import { ThemeToggleButton } from "~/components/ThemeToggleButton";
+import { Container } from "~/components/layout/Container";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -33,8 +39,18 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         <ThemedCanvas />
 
         <div className={`${poppins.variable} ${permanentMarker.variable} font-poppins`}>
-          <Component {...pageProps} />
+          <Main>
+            <Header>
+              <Logo />
+              <Navigation />
+              <ThemeToggleButton />
+            </Header>
+            <Container>
+              <Component {...pageProps} />
+            </Container>
+          </Main>
         </div>
+
       </ThemeProvider>
     </>
   )

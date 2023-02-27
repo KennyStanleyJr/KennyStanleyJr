@@ -27,7 +27,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       <Head>
         <title>Kenny Stanley</title>
         <meta name="description" content="Developer Portfolio" />
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <ThemeProvider attribute="class" defaultTheme="dark">
         <ThemedCanvas />

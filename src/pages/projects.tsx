@@ -1,9 +1,11 @@
 import { type NextPage } from "next";
 
-import { ProjectsSection } from "~/components/sections/ProjectsSection";
-
 const Projects: NextPage = () => {
-  return <ProjectsSection />
+  return <div className="flex flex-col h-full justify-center">
+    <h3 className="text-4xl md:text-5xl font-bold text-center mb-12">
+      Projects
+    </h3>
+  </div>
 };
 
 export default Projects;

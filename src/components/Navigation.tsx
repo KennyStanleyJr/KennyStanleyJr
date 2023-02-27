@@ -1,7 +1,7 @@
 import NavItem from '@/components/NavItem'
 
 export const Navigation = () => {
-  const NavItems = ['about', 'skills', 'projects', 'contact']
+  const NavItems = ['home', 'about', 'projects', 'contact']
   return (
     <nav>
       <div className="hidden md:block">

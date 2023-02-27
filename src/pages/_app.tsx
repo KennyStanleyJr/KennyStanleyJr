@@ -49,7 +49,7 @@ function ThemedCanvas() {
       <Canvas >
         <Sparkles
           count={1000}
-          speed={0.5}
+          speed={0.2}
           opacity={1}
           color={theme === 'dark' ? '#fff' : '#000'}
           size={1}

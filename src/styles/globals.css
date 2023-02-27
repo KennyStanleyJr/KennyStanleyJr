@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .animated-radius {
-  border-radius: 2rem;
+    border-radius: 2rem;
 }
 .animated-radius:hover {
-  border-radius: 0.75rem;
+    border-radius: 0.75rem;
 }

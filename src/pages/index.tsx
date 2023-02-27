@@ -1,24 +1,28 @@
-import Main from '@/components/layout/Main'
-import Header from '@/components/layout/Header'
-import Logo from '@/components/Logo'
-import Navigation from '@/components/Navigation'
-import DarkModeToggle from '@/components/DarkModeToggle'
-import Intro from '@/components/Intro'
-import Container from '@/components/layout/Container'
+import { type NextPage } from "next";
 
-export default function Home() {
+import { Main } from "~/components/layout/Main";
+import { Header } from "~/components/layout/Header";
+import { Logo } from "~/components/Logo";
+import { Navigation } from "~/components/Navigation";
+import { ThemeToggleButton } from "~/components/ThemeToggleButton";
+import { Container } from "~/components/layout/Container";
+import { IntroSection } from "~/components/sections/IntroSection";
+
+const Home: NextPage = () => {
   return (
     <>
       <Main>
         <Header>
           <Logo />
           <Navigation />
-          <DarkModeToggle />
+          <ThemeToggleButton />
         </Header>
         <Container>
-          <Intro />
+          <IntroSection />
         </Container>
       </Main>
     </>
   )
-}
+};
+
+export default Home;

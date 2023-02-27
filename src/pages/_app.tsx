@@ -29,7 +29,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         <meta name="description" content="Developer Portfolio" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <ThemeProvider attribute="class" defaultTheme="dark">
+      <ThemeProvider attribute="class" >
         <ThemedCanvas />
 
         <div className={`${poppins.variable} ${permanentMarker.variable} font-poppins`}>
@@ -44,11 +44,9 @@ export default MyApp
 
 function ThemedCanvas() {
   const { theme } = useTheme()
-  console.log('theme', theme)
   return (
       <div className="h-screen-with-spacer md:h-screen">
       <Canvas >
-
         <Sparkles
           count={1000}
           speed={0.5}

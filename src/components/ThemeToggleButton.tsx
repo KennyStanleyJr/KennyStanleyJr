@@ -2,13 +2,13 @@ import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 
 export function ThemeToggleButton() {
-    const [mounted, setMounted] = useState(false)
     const { theme, setTheme } = useTheme()
 
+    const [mounted, setMounted] = useState(false)
     // When mounted on client, now we can show the UI
+    // Prevents React Hydration Error
     useEffect(() => setMounted(true), [])
-
-    if (!mounted) return null
+    if (!mounted) return <div />
 
     return (
         <>

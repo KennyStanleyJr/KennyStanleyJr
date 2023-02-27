@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../../public/logo.svg'
+
 export const Logo = () => {
   return (
     <Link href="/" passHref>
       <Image
-        src={logo}
+        src="/logo.svg"
         width={80}
         height={80}
         alt="logo image"

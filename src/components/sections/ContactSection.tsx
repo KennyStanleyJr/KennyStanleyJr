@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useCallback, useState } from "react"
+import { type ChangeEvent, type FormEvent, useCallback, useState } from "react"
 
 export function ContactSection() {
     const [details, setDetails] = useState({

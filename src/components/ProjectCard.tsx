@@ -12,7 +12,7 @@ export type Project = {
 };
 
 export function ProjectCard(props: Project) {
-    return <Link href={props.link} target="_blank" className="bg-white dark:bg-black bg-opacity-80 rounded-md border-2 border-neutral-600 dark:border-neutral-800">
+    return <Link href={props.link} target="_blank" className="bg-white dark:bg-black bg-opacity-80 rounded-lg border-2 border-neutral-300 dark:border-neutral-800">
         <div className="">
             <Image src={props.image} alt={props.name} width={600} height={300} className="object-cover rounded-t-md" />
         </div>

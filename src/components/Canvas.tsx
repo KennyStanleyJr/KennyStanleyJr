@@ -5,7 +5,7 @@ import { Sparkles } from "@react-three/drei"
 export function Canvas() {
     const { theme } = useTheme()
     return (
-        <div className="h-screen-with-spacer md:h-screen">
+        <div className="h-screen">
             <ThreeCanvas >
                 <Sparkles
                     count={1000}

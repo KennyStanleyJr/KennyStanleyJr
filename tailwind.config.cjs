@@ -13,9 +13,6 @@ module.exports = {
         poppins: ["var(--font-poppins)"],
         "permanent-marker": ["var(--font-permanent-marker)"],
       },
-      height: (theme) => ({
-        "screen-with-spacer": "calc(100vh + 8rem)",
-      }),
     },
   },
   plugins: [],

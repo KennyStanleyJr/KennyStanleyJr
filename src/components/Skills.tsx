@@ -20,13 +20,14 @@ export function Skills({ skills }: { skills: Skill[] }) {
 }
 
 function Category({ category, skills }: { category: Category, skills: Skill[] }) {
-    return <><h3 className="mt-2 text-md md:text-lg lg:text-xl">{category}</h3>
-        <div className="flex gap-2 flex-wrap">
+    return <>
+        <h3 className="mt-1 text-md md:text-lg lg:text-xl capitalize">{category}</h3>
+        <div className="flex gap-1 flex-wrap">
             {skills.filter(skill => skill.category === category).map(skill => <Skill key={skill.name} {...skill} />)}
         </div>
     </>
 }
 
 function Skill({ name, icon, category }: Skill) {
-    return <div className="bg-black text-white dark:bg-white dark:text-black rounded px-4 py-1">{name}</div>
+    return <div className="text-xs md:text-sm bg-black text-white dark:bg-white dark:text-black rounded px-2 py-1">{name}</div>
 }

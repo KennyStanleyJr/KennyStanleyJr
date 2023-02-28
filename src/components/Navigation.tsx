@@ -6,27 +6,25 @@ const tabs = ['home', 'about', 'projects', 'contact']
 
 export function DesktopNavigation() {
     return (
-        <nav>
-            <div className="hidden md:block">
-                <ul className="flex text-xl gap-4">
-                    {tabs.map((pageName) => (
-                        <Tab key={pageName} pageName={pageName} />
-                    ))}
-                </ul>
-            </div>
+        <nav className="hidden md:block">
+            <ul className="flex text-xl gap-4">
+                {tabs.map((pageName) => (
+                    <Tab key={pageName} pageName={pageName} />
+                ))}
+            </ul>
         </nav>
     )
 }
 
 export function MobileNavigation() {
     return (
-        <div className="block md:hidden fixed bottom-0 left-0 right-0 py-4 z-50 backdrop-blur-md shadow-xl border-t border-neutral-200 dark:border-neutral-800">
+        <nav className="block md:hidden fixed bottom-0 left-0 right-0 py-4 z-50 backdrop-blur-md shadow-xl border-t border-neutral-200 dark:border-neutral-800">
             <ul className="flex justify-evenly">
                 {tabs.map((pageName) => (
                     <Tab key={pageName} pageName={pageName} />
                 ))}
             </ul>
-        </div>
+        </nav>
     )
 }
 

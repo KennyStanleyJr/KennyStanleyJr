@@ -42,7 +42,6 @@ const Contact: NextPage = () => {
           </div>
         </div>
 
-
         <form
           onSubmit={handleSubmit}
           className="flex flex-col gap-4 md:gap-6 text-md md:text-lg lg:text-xl"
@@ -54,7 +53,7 @@ const Contact: NextPage = () => {
               placeholder="Name"
               value={details.name}
               onChange={handleChange}
-              className="p-2 md:p-3 lg:p-4 rounded border-2 dark:border-transparent"
+              className="p-2 md:p-3 lg:p-4 rounded border dark:border-transparent"
             />
             <input
               id="email"

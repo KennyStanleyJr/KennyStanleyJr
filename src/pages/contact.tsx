@@ -30,7 +30,7 @@ const Contact: NextPage = () => {
       <h3 className="text-4xl md:text-5xl font-bold text-center mb-12">
         Contact
       </h3>
-      <div className="flex flex-col md:flex-row gap-12 lg:gap-48">
+      <div className="lg:mx-auto max-w-5xl flex flex-col lg:flex-row justify-between gap-12 lg:gap-24">
 
         <div className="flex flex-col gap-6 items-baseline">
           <h1 className="text-xl md:text-3xl">
@@ -46,7 +46,7 @@ const Contact: NextPage = () => {
           onSubmit={handleSubmit}
           className="flex flex-col gap-4 md:gap-6 text-md md:text-lg lg:text-xl"
         >
-          <div className="flex flex-col md:flex-row gap-4 md:gap-6">
+          <div className="flex flex-col lg:flex-row gap-4 md:gap-6 w-full">
             <input
               id="name"
               type="text"
@@ -82,7 +82,7 @@ const Contact: NextPage = () => {
           />
           <button
             type="submit"
-            className="border-2 border-blue-600 hover:bg-blue-600 p-2 md:p-3 lg:p-4 rounded transition-all duration-200"
+            className="animated-radius w-min whitespace-nowrap self-end border-2 border-blue-600 hover:bg-blue-600 hover:text-white px-4 py-2 md:px-5 md:py-3 lg:px-6 lg:py-4 rounded-full transition-all duration-200"
           >
             Send Message
           </button>

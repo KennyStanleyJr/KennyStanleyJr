@@ -12,7 +12,7 @@ export function Navigation() {
                     ))}
                 </ul>
             </div>
-            <div className="block md:hidden fixed bottom-0 left-0 right-0 py-4 z-50 backdrop-blur shadow-xl border-t border-neutral-200 dark:border-neutral-800">
+            <div className="block md:hidden fixed bottom-0 left-0 right-0 py-4 z-50 backdrop-blur-md shadow-xl border-t border-neutral-200 dark:border-neutral-800">
                 <ul className="flex justify-evenly">
                     {tabs.map((pageName) => (
                         <Tab key={pageName} pageName={pageName} />

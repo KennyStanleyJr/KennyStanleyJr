@@ -31,15 +31,6 @@ export function MobileNavigation() {
 }
 
 function Tab({ pageName }: { pageName: string }) {
-    useEffect(() => {
-        console.log('mount')
-
-        return () => {
-            console.log('unmount')
-        }
-    }, [])
-
-
     const router = useRouter()
 
     const adjustedPageName = pageName === 'home' ? '' : `${pageName}`

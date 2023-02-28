@@ -11,7 +11,7 @@ import { Canvas } from '~/components/Canvas'
 import { Main } from "~/components/layout/Main";
 import { Header } from "~/components/layout/Header";
 import { Logo } from "~/components/Logo";
-import { Navigation } from "~/components/Navigation";
+import { DesktopNavigation, MobileNavigation } from "~/components/Navigation";
 import { ThemeToggleButton } from "~/components/ThemeToggleButton";
 import { Container } from "~/components/layout/Container";
 
@@ -40,9 +40,10 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         <Canvas />
         <div className={`${poppins.variable} ${permanentMarker.variable} font-poppins`}>
           <Main>
+            <MobileNavigation />
             <Header>
               <Logo />
-              <Navigation />
+              <DesktopNavigation />
               <ThemeToggleButton />
             </Header>
             <Container>

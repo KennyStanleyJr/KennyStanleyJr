@@ -53,7 +53,7 @@ const Contact: NextPage = () => {
               placeholder="Name"
               value={details.name}
               onChange={handleChange}
-              className="p-2 md:p-3 lg:p-4 rounded border dark:border-transparent"
+              className="p-2 md:p-3 lg:p-4 rounded-md border dark:border-transparent"
             />
             <input
               id="email"
@@ -61,7 +61,7 @@ const Contact: NextPage = () => {
               placeholder="Email"
               value={details.email}
               onChange={handleChange}
-              className="p-2 md:p-3 lg:p-4 rounded border dark:border-transparent"
+              className="p-2 md:p-3 lg:p-4 rounded-md border dark:border-transparent"
             />
           </div>
 
@@ -71,14 +71,14 @@ const Contact: NextPage = () => {
             placeholder="Subject (Optional)"
             value={details.subject}
             onChange={handleChange}
-            className="p-2 md:p-3 lg:p-4 rounded border dark:border-transparent"
+            className="p-2 md:p-3 lg:p-4 rounded-md border dark:border-transparent"
           />
           <textarea
             id="message"
             placeholder="Message"
             value={details.message}
             onChange={handleChange}
-            className="p-2 md:p-3 lg:p-4 rounded border dark:border-transparent"
+            className="p-2 md:p-3 lg:p-4 rounded-md border dark:border-transparent"
           />
           <button
             type="submit"

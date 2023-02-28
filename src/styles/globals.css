@@ -8,3 +8,28 @@
 .animated-radius:hover {
     border-radius: 0.75rem;
 }
+
+/****** Custom Scrollbar ******/
+
+/* Width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 8px
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/****** End Custom Scrollbar ******/

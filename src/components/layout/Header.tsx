@@ -1,6 +1,6 @@
 export function Header({ children }: { children: React.ReactNode }) {
     return (
-        <header className="flex justify-between items-center pt-2 px-8">
+        <header className="fixed w-full flex justify-between items-center pt-4 px-8">
             {children}
         </header>
     )

@@ -15,9 +15,8 @@ const Home: NextPage = () => {
       <h2 className="text-2xl md:text-4xl font-medium text-blue-700 dark:text-blue-400 pb-2">
         Full Stack Developer
       </h2>
-      <p className="text-lg md:text-xl">
-        I believe that incredible things are possible <br />
-        through the power of technology.
+      <p className="max-w-md text-lg md:text-xl">
+        I believe that incredible things are possible through the power of technology.
       </p>
     </m.div>
   </div>

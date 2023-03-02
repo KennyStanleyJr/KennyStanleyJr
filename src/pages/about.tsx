@@ -139,7 +139,7 @@ const About: NextPage = () => {
       About
     </h3>
       <div className="mb-12 max-w-4xl mx-auto flex flex-col md:flex-row gap-8">
-        <div className="md:max-w-md flex-1 text-sm md:text-base font-light">
+        <div className="md:max-w-lg flex-1 text-sm md:text-base font-light">
           <p>As an electrical engineering graduate, I have a strong foundation in technical problem-solving and innovation. My career began in the LED screen manufacturing industry, where I gained valuable experience in product development and project management.</p>
           <p className="mt-4">I taught myself web development, which has allowed me to expand my skillset and tackle new challenges in the digital space. Currently, I'm working on a startup with a small team, where we hope to bring innovative ideas to life.</p>
           <p className="mt-4">In my free time, I enjoy making robots, which allows me to explore my creativity and passion for technology. With a diverse range of experiences and a love for all things tech, I'm excited for what the future holds.</p>

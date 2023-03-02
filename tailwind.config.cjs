@@ -11,7 +11,6 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["var(--font-poppins)"],
-        "permanent-marker": ["var(--font-permanent-marker)"],
       },
     },
   },

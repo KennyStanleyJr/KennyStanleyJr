@@ -3,7 +3,7 @@ import { type AppType } from "next/dist/shared/lib/utils";
 import "~/styles/globals.css";
 
 import Head from "next/head";
-import { Poppins, Permanent_Marker } from "@next/font/google"
+import { Poppins } from "@next/font/google"
 import { ThemeProvider } from 'next-themes'
 
 import { Canvas } from '~/components/Canvas'
@@ -21,11 +21,6 @@ const poppins = Poppins({
   variable: '--font-poppins',
 })
 
-const permanentMarker = Permanent_Marker({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-permanent-marker',
-})
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
@@ -38,7 +33,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
 
       <ThemeProvider attribute="class" >
         <Canvas />
-        <div className={`${poppins.variable} ${permanentMarker.variable} font-poppins`}>
+        <div className={`${poppins.variable} font-poppins`}>
           <Main>
             <MobileNavigation />
             <Header>

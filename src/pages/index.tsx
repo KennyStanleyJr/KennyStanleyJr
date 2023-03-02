@@ -7,7 +7,7 @@ const Home: NextPage = () => {
       <h3 className="text-xl md:text-3xl font-light">👋 Hello! I&apos;m</h3>
     </m.div>
     <m.div animate={{ y: 0, opacity: 100 }} initial={{ y: 100, opacity: 0 }} transition={{ duration: 0.75, ease: 'backOut' }} >
-      <h1 className="font-permanent-marker text-6xl md:text-7xl lg:text-8xl font-extrabold pt-4 pb-8">
+      <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold pt-4 pb-8">
         Kenny Stanley
       </h1>
     </m.div>

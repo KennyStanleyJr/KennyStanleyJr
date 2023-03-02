@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         Full Stack Developer
       </h2>
       <p className="max-w-md text-lg md:text-xl">
-        I believe that incredible things are possible through the power of technology.
+        Passionate about technology, dedicated to continuous learning, and committed to making a positive impact on the world.
       </p>
     </m.div>
   </div>

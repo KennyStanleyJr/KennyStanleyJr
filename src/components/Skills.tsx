@@ -33,5 +33,6 @@ function Category({ category, skills }: { category: Category, skills: Skill[] })
 }
 
 function Skill({ name, icon, category }: Skill) {
+    console.log(name, icon, category)
     return <div className="bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 text-xs px-2 py-1 rounded-md">{name}</div>
 }

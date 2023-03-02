@@ -9,16 +9,16 @@ const projects: Project[] = [
     image: '/screenshots/charta.png',
     link: 'https://getcharta.com',
     github: '',
-    technologies: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript', 'Vercel', 'Framer Motion']
+    technologies: ['Next.js', 'React', 'TailwindCSS', 'TypeScript', 'Vercel', 'Framer Motion', 'Mailchimp']
   },
   {
-    name: 'Ashe Cain',
+    name: 'This Portfolio',
     description: '',
-    image: '/screenshots/ashecain.png',
-    link: 'https://ashecain.com',
-    github: 'https://github.com/KennyStanley/AsheCain',
-    technologies: ['WordPress']
-  },
+    image: '/screenshots/portfolio.png',
+    link: 'https://kennystanley.dev',
+    github: 'https://github.com/KennyStanley/KennyStanley',
+    technologies: ['Next.js', 'React', 'TailwindCSS', 'TypeScript', 'Vercel', 'Framer Motion', 'Three.js', 'React Three Fiber']
+  }
 ]
 
 const Projects: NextPage = () => {

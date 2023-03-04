@@ -9,7 +9,15 @@ const projects: Project[] = [
     image: '/screenshots/charta.png',
     link: 'https://getcharta.com',
     github: '',
-    technologies: ['Next.js', 'React', 'TailwindCSS', 'TypeScript', 'Vercel', 'Framer Motion', 'Mailchimp']
+    technologies: ['Next.js', 'React', 'TailwindCSS', 'TypeScript', 'Framer Motion', 'Mailchimp', 'Vercel']
+  },
+  {
+    name: 'Group Video-Chat',
+    description: '',
+    image: '/screenshots/group-video-chat.png',
+    link: 'https://video-chat.up.railway.app/',
+    github: 'https://github.com/KennyStanley/group-video-chat',
+    technologies: ['HTML', 'TailwindCSS', 'JavaScript', 'WebRTC', 'Socket.io', 'Node.js', 'Express.js', 'Railway']
   },
   {
     name: 'This Portfolio',
@@ -17,7 +25,7 @@ const projects: Project[] = [
     image: '/screenshots/portfolio.png',
     link: 'https://kennystanley.dev',
     github: 'https://github.com/KennyStanley/KennyStanley',
-    technologies: ['Next.js', 'React', 'TailwindCSS', 'TypeScript', 'Vercel', 'Framer Motion', 'Three.js', 'React Three Fiber']
+    technologies: ['Next.js', 'React', 'TailwindCSS', 'TypeScript', 'Framer Motion', 'Three.js', 'React Three Fiber', 'Vercel']
   }
 ]
 

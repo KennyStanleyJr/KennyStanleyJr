@@ -10,7 +10,7 @@ const Contact: NextPage = () => {
     message: '',
   })
 
-  const [state, setState] = useState<'idle' | 'sending' | 'error' | 'success'>('sending')
+  const [state, setState] = useState<'idle' | 'sending' | 'error' | 'success'>('idle')
 
   const handleChange = useCallback(
     (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

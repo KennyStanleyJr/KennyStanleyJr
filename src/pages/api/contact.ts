@@ -1,4 +1,4 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { type NextApiRequest, type NextApiResponse } from "next";
 import sendgrid from "@sendgrid/mail";
 import { env } from "~/env.mjs";
 
@@ -8,7 +8,7 @@ interface ContactFormData extends NextApiRequest {
   body: {
     name: string;
     email: string;
-    subject?: string;
+    subject: string;
     message: string;
   };
 }

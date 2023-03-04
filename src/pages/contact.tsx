@@ -20,11 +20,11 @@ const Contact: NextPage = () => {
   )
 
   const handleSubmit = useCallback(
-    async (e: FormEvent) => {
+    (e: FormEvent) => {
       e.preventDefault()
       console.log(details)
 
-      const res = await fetch("/api/contact", {
+      const res = fetch("/api/contact", {
         body: JSON.stringify({
           email: details.email,
           name: details.name,
@@ -35,21 +35,23 @@ const Contact: NextPage = () => {
           "Content-Type": "application/json",
         },
         method: "POST",
-      });
-
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
+      }).then((res) => {
+        const data = res.json() as { error?: string, message?: string }
+        if (data.error) {
+          console.log(data.error);
+          setState('error')
+        } else {
+          setState('success')
+          setDetails({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+          })
+        }
+      }).catch((err) => {
+        console.log(err);
         setState('error')
-        return;
-      }
-
-      setState('success')
-      setDetails({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
       })
     },
     [details]

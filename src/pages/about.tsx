@@ -90,6 +90,10 @@ const skills: Skill[] = [
     category: 'front-end'
   },
   {
+    name: 'Framer Motion',
+    category: 'front-end'
+  },
+  {
     name: 'Figma',
     category: 'tools'
   },

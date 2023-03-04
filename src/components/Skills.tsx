@@ -2,7 +2,6 @@ type Category = 'languages' | 'front-end' | 'back-end' | 'tools' | 'other'
 
 export type Skill = {
     name: string
-    icon: string
     category: Category
 }
 
@@ -32,7 +31,7 @@ function Category({ category, skills }: { category: Category, skills: Skill[] })
     </div>
 }
 
-function Skill({ name, icon, category }: Skill) {
-    console.log(name, icon, category)
+function Skill({ name, category }: Skill) {
+    console.log(name, category)
     return <div className="bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 text-xs px-2 py-1 rounded-md">{name}</div>
 }

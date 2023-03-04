@@ -7,127 +7,106 @@ import { type Skill, Skills } from "~/components/Skills";
 const skills: Skill[] = [
   {
     name: 'Git',
-    icon: '/icons/git.svg',
     category: 'other'
   },
   {
+    name: 'JavaScript',
+    category: 'languages'
+  },
+  {
     name: 'TypeScript',
-    icon: '/icons/typescript.svg',
     category: 'languages'
   },
   {
     name: 'Python',
-    icon: '/icons/python.svg',
     category: 'languages'
   },
   {
     name: 'HTML',
-    icon: '/icons/html.svg',
     category: 'front-end'
   },
   {
     name: 'CSS',
-    icon: '/icons/css.svg',
     category: 'front-end'
   },
   {
     name: 'TailwindCSS',
-    icon: '/icons/tailwindcss.svg',
     category: 'front-end'
   },
   {
     name: 'React',
-    icon: '/icons/react.svg',
     category: 'front-end'
   },
   {
     name: 'Next.js',
-    icon: '/icons/nextjs.svg',
     category: 'back-end'
   },
   {
     name: 'Node.js',
-    icon: '/icons/nodejs.svg',
     category: 'back-end'
   },
   {
     name: 'Express.js',
-    icon: '/icons/expressjs.svg',
     category: 'back-end'
   },
   {
     name: 'SQL',
-    icon: '/icons/sql.svg',
     category: 'back-end'
   },
   {
     name: 'MongoDB',
-    icon: '/icons/mongodb.svg',
     category: 'back-end'
   },
   {
     name: 'Prisma',
-    icon: '/icons/prisma.svg',
     category: 'back-end'
   },
   {
     name: 'Solid.js',
-    icon: '/icons/solidjs.svg',
     category: 'front-end'
   },
   {
     name: 'tRPC',
-    icon: '/icons/trpc.svg',
     category: 'other'
   },
   {
     name: 'WebRTC',
-    icon: '/icons/webrtc.svg',
     category: 'other'
   },
   {
     name: 'XState',
-    icon: '/icons/xstate.svg',
     category: 'other'
   },
   {
     name: 'Three.js',
-    icon: '/icons/threejs.svg',
     category: 'front-end'
   },
   {
     name: 'React Three Fiber',
-    icon: '/icons/react-three-fiber.svg',
     category: 'front-end'
   },
   {
     name: 'Babylon.js',
-    icon: '/icons/babylonjs.svg',
     category: 'front-end'
   },
   {
     name: 'Figma',
-    icon: '/icons/figma.svg',
     category: 'tools'
   },
   {
     name: 'Blender',
-    icon: '/icons/blender.svg',
     category: 'tools'
   },
   {
     name: 'Arduino',
-    icon: '/icons/arduino.svg',
     category: 'other'
   },
   {
     name: 'Raspberry Pi',
-    icon: '/icons/raspberry-pi.svg',
     category: 'other'
   },
   {
     name: 'ROS',
-    icon: '/icons/ros.svg',
     category: 'other'
   },
 ]

@@ -10,7 +10,7 @@ const Contact: NextPage = () => {
     message: '',
   })
 
-  const [state, setState] = useState<'idle' | 'error' | 'success'>('idle')
+  const [state, setState] = useState<'idle' | 'sending' | 'error' | 'success'>('sending')
 
   const handleChange = useCallback(
     (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -23,6 +23,8 @@ const Contact: NextPage = () => {
     (e: FormEvent) => {
       e.preventDefault()
       console.log(details)
+
+      setState('sending')
 
       const res = fetch("/api/contact", {
         body: JSON.stringify({
@@ -58,6 +60,20 @@ const Contact: NextPage = () => {
   )
 
   return (
+    <>
+      <style>
+        {`
+          .loading-circle-1 {
+            animation-delay: 0.1s;
+          }
+          .loading-circle-2 {
+            animation - delay: 0.2s;
+          }
+          .loading-circle-3 {
+            animation - delay: 0.3s;
+          }
+        `}
+      </style>
     <m.div animate={{ opacity: 100 }} initial={{ opacity: 0 }} transition={{ duration: 0.5, ease: 'backOut' }} className="flex flex-col h-full justify-start">
       <h3 className="text-4xl md:text-5xl font-bold text-center mb-12">
         Contact
@@ -116,6 +132,11 @@ const Contact: NextPage = () => {
             {state === 'idle' && (
               <div />
             )}
+              {state === 'sending' && (
+                <div className="flex gap-2 items-center">
+
+                </div>
+              )}
             {state === 'error' && (
               <p className="text-red-600 text-sm md:text-base">Something went wrong. Please try again.</p>
             )}
@@ -124,15 +145,18 @@ const Contact: NextPage = () => {
             )}
             <button
               type="submit"
-              className="animated-radius w-min whitespace-nowrap self-end border-2 border-blue-600 hover:bg-blue-600 hover:text-white px-4 py-2 md:px-5 md:py-3 lg:px-6 lg:py-4 rounded-full transition-all duration-200"
+                disabled={state === 'sending'}
+                className={`${state === 'sending' ? 'bg-black opacity-70 text-white dark:bg-white dark:bg-opacity-20 border-neutral-800 cursor-not-allowed' : 'animated-radius hover:bg-blue-600 hover:text-white'} w-min whitespace-nowrap self-end border-2 border-blue-600 px-4 py-2 md:px-5 md:py-3 lg:px-6 lg:py-4 rounded-full transition-all duration-200`}
             >
-              Send Message
+                {state === 'sending' ? <p className="animate-pulse">Sending...</p> : 'Send Message'}
             </button>
           </div>
         </form>
 
       </div>
     </m.div>
+    </>
+
   )
 };
 

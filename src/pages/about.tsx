@@ -10,6 +10,10 @@ const skills: Skill[] = [
     category: 'other'
   },
   {
+    name: 'GitHub Actions',
+    category: 'other'
+  },
+  {
     name: 'JavaScript',
     category: 'languages'
   },

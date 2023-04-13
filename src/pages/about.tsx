@@ -117,6 +117,10 @@ const skills: Skill[] = [
     name: 'ROS',
     category: 'other'
   },
+  {
+    name: 'SquareSpace',
+    category: 'tools'
+  }
 ]
 
 const About: NextPage = () => {

@@ -12,6 +12,14 @@ const projects: Project[] = [
     technologies: ['Next.js', 'React', 'TailwindCSS', 'TypeScript', 'Framer Motion', 'Mailchimp', 'Vercel']
   },
   {
+    name: 'Ashe Cain',
+    description: '',
+    image: '/screenshots/ashecain.png',
+    link: 'https://ashecain.com',
+    github: '',
+    technologies: ['SquareSpace']
+  },
+  {
     name: 'Group Video-Chat',
     description: '',
     image: '/screenshots/group-video-chat.png',

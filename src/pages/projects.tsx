@@ -17,7 +17,7 @@ const projects: Project[] = [
     image: '/screenshots/ashecain.png',
     link: 'https://ashecain.com',
     github: '',
-    technologies: ['SquareSpace']
+    technologies: ['SquareSpace', "HTML", "CSS", "JavaScript"]
   },
   {
     name: 'Group Video-Chat',

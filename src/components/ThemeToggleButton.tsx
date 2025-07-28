@@ -6,8 +6,10 @@ export function ThemeToggleButton() {
 
     const [mounted, setMounted] = useState(false)
     // When mounted on client, now we can show the UI
-    // Prevents React Hydration Error
-    useEffect(() => setMounted(true), [])
+    useEffect(() => {
+        setMounted(true) // Prevents React Hydration Error
+        setTheme('dark') // Prevents initial white screen
+    }, [setTheme])
     if (!mounted) return <div />
 
     return (

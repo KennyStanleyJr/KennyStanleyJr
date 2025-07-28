@@ -1,23 +1,17 @@
+
+
 import { type NextPage } from "next";
 import { motion as m } from "framer-motion";
 import { ProjectCard, type Project } from "~/components/ProjectCard";
 
 const projects: Project[] = [
   {
-    name: 'Charta',
+    name: 'Drummaverse',
     description: '',
-    image: '/screenshots/charta.png',
-    link: 'https://getcharta.com',
+    image: '/screenshots/drummaverse.png',
+    link: 'https://drummaverse.nexmos.io',
     github: '',
-    technologies: ['Next.js', 'React', 'TailwindCSS', 'TypeScript', 'Framer Motion', 'Mailchimp', 'Vercel']
-  },
-  {
-    name: 'Ashe Cain',
-    description: '',
-    image: '/screenshots/ashecain.png',
-    link: 'https://ashecain.com',
-    github: '',
-    technologies: ['SquareSpace', "HTML", "CSS", "JavaScript"]
+    technologies: ['Next.js', "React", "TailwindCSS", "Typescript", "Babylon.js", "XState"]
   },
   {
     name: 'Group Video-Chat',
@@ -28,13 +22,30 @@ const projects: Project[] = [
     technologies: ['HTML', 'TailwindCSS', 'JavaScript', 'WebRTC', 'Socket.io', 'Node.js', 'Express.js', 'Railway']
   },
   {
+    name: 'Charta',
+    description: '',
+    image: '/screenshots/charta.png',
+    link: 'https://web.archive.org/web/20241012021446/https://getcharta.com/',
+    // link: 'https://getcharta.com',
+    github: '',
+    technologies: ['Next.js', 'React', 'TailwindCSS', 'TypeScript', 'Framer Motion', 'Mailchimp', 'Vercel']
+  },
+  {
     name: 'This Portfolio',
     description: '',
     image: '/screenshots/portfolio.png',
     link: 'https://kennystanley.dev',
     github: 'https://github.com/KennyStanley/KennyStanley',
     technologies: ['Next.js', 'React', 'TailwindCSS', 'TypeScript', 'Framer Motion', 'Three.js', 'React Three Fiber', 'Vercel']
-  }
+  },
+  // {
+  //   name: 'Ashe Cain',
+  //   description: '',
+  //   image: '/screenshots/ashecain.png',
+  //   link: 'https://ashecain.com',
+  //   github: '',
+  //   technologies: ['SquareSpace', "HTML", "CSS", "JavaScript"]
+  // },
 ]
 
 const Projects: NextPage = () => {

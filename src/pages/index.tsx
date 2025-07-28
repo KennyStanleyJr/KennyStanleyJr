@@ -2,7 +2,7 @@ import { type NextPage } from "next";
 import { motion as m } from "framer-motion";
 
 const Home: NextPage = () => {
-  return <div className="flex flex-col mt-32">
+  return <div className="flex flex-col mt-16 md:mt-32">
     <m.div animate={{ y: 0, opacity: 100 }} initial={{ y: 100, opacity: 0 }} transition={{ duration: 0.5, ease: 'backOut' }} >
       <h3 className="text-xl md:text-3xl font-light">👋 Hello! I&apos;m</h3>
     </m.div>

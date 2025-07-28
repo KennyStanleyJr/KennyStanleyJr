@@ -1,63 +1,63 @@
-import { type ChangeEvent, type FormEvent, useCallback, useState } from "react";
+// import { type ChangeEvent, type FormEvent, useCallback, useState } from "react";
 import { type NextPage } from "next";
 import { motion as m } from "framer-motion";
 
 const Contact: NextPage = () => {
-  const [details, setDetails] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  })
+  // const [details, setDetails] = useState({
+  //   name: '',
+  //   email: '',
+  //   subject: '',
+  //   message: '',
+  // })
 
-  const [state, setState] = useState<'idle' | 'sending' | 'error' | 'success'>('idle')
+  // const [state, setState] = useState<'idle' | 'sending' | 'error' | 'success'>('idle')
 
-  const handleChange = useCallback(
-    (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      setDetails({ ...details, [e.target.id]: e.target.value })
-    },
-    [details, setDetails]
-  )
+  // const handleChange = useCallback(
+  //   (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  //     setDetails({ ...details, [e.target.id]: e.target.value })
+  //   },
+  //   [details, setDetails]
+  // )
 
-  const handleSubmit = useCallback(
-    (e: FormEvent) => {
-      e.preventDefault()
-      console.log(details)
+  // const handleSubmit = useCallback(
+  //   (e: FormEvent) => {
+  //     e.preventDefault()
+  //     console.log(details)
 
-      setState('sending')
+  //     setState('sending')
 
-      const res = fetch("/api/contact", {
-        body: JSON.stringify({
-          email: details.email,
-          name: details.name,
-          subject: details.subject,
-          message: details.message,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-      }).then((res) => {
-        const data = res.json() as { error?: string, message?: string }
-        if (data.error) {
-          console.log(data.error);
-          setState('error')
-        } else {
-          setState('success')
-          setDetails({
-            name: '',
-            email: '',
-            subject: '',
-            message: '',
-          })
-        }
-      }).catch((err) => {
-        console.log(err);
-        setState('error')
-      })
-    },
-    [details]
-  )
+  //     const res = fetch("/api/contact", {
+  //       body: JSON.stringify({
+  //         email: details.email,
+  //         name: details.name,
+  //         subject: details.subject,
+  //         message: details.message,
+  //       }),
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       method: "POST",
+  //     }).then((res) => {
+  //       const data = res.json() as { error?: string, message?: string }
+  //       if (data.error) {
+  //         console.log(data.error);
+  //         setState('error')
+  //       } else {
+  //         setState('success')
+  //         setDetails({
+  //           name: '',
+  //           email: '',
+  //           subject: '',
+  //           message: '',
+  //         })
+  //       }
+  //     }).catch((err) => {
+  //       console.log(err);
+  //       setState('error')
+  //     })
+  //   },
+  //   [details]
+  // )
 
   return (
     <>
@@ -75,22 +75,22 @@ const Contact: NextPage = () => {
         `}
       </style>
     <m.div animate={{ opacity: 100 }} initial={{ opacity: 0 }} transition={{ duration: 0.5, ease: 'backOut' }} className="flex flex-col h-full justify-start">
-      <h3 className="text-4xl md:text-5xl font-bold text-center mb-12">
+        <h3 className="text-4xl md:text-5xl font-bold text-center mb-16">
         Contact
       </h3>
       <div className="lg:mx-auto max-w-5xl flex flex-col lg:flex-row justify-between gap-12 lg:gap-24">
 
-        <div className="flex flex-col gap-6 items-baseline">
-          <h1 className="text-xl md:text-3xl">
-            <span className="text-blue-600">Nashville</span>, TN
+          <div className="flex flex-col gap-12 items-baseline text-center">
+            <h1 className="text-2xl md:text-3xl w-full">
+              <span className=" text-white">Nashville</span>, TN
           </h1>
-          <div className="flex flex-col gap-4 text-md md:text-xl">
-            <a href="mailto:kpstanleyjr@gmail.com">kpstanleyjr@gmail.com</a>
-            <a href="tel:+1-615-498-4465">615-498-4465</a>
+            <div className="w-full flex flex-col gap-4 text-xl md:text-2xl text-blue-700 dark:text-blue-400">
+              <a href="mailto:kpstanleyjr@gmail.com" className="underline">kpstanleyjr@gmail.com</a>
+              <a href="tel:+1-615-498-4465" className="underline">615-498-4465</a>
           </div>
         </div>
 
-        <form
+          {/* <form
           onSubmit={handleSubmit}
           className="flex flex-col gap-4 md:gap-6 text-md md:text-lg lg:text-xl"
         >
@@ -151,7 +151,7 @@ const Contact: NextPage = () => {
                 {state === 'sending' ? <p className="animate-pulse">Sending...</p> : 'Send Message'}
             </button>
           </div>
-        </form>
+        </form> */}
 
       </div>
     </m.div>

@@ -82,7 +82,7 @@ const Contact: NextPage = () => {
 
           <div className="flex flex-col gap-12 items-baseline text-center">
             <h1 className="text-2xl md:text-3xl w-full">
-              <span className=" text-white">Nashville</span>, TN
+              <span className="">Nashville</span>, TN
           </h1>
             <div className="w-full flex flex-col gap-4 text-xl md:text-2xl text-blue-700 dark:text-blue-400">
               <a href="mailto:kpstanleyjr@gmail.com" className="underline">kpstanleyjr@gmail.com</a>
